@@ -21,4 +21,4 @@ stdout_logfile=/dev/stdout
 stdout_logfile_maxbytes=0
 EOT
 
-exec /usr/bin/supervisord
+exec supervisord

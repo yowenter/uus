@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+<title>help</title>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/help.css">	
+</head>
+<body>
+	<h1 class="topictitle1">Work with Firmware Updating</h1>
+	<p>
+		The firmware updates function applies Recommended Updates (UXSP) and Individual Updates to your ESXi system. You can use this function to obtain and deploy UpdateXpress System Packs (UXSP) firmware updates and individual firmware updates.
+	</p>
+
+	<div>
+		The main functions of firmware updates are:
+		<dl>
+		 <dt><b>Acquire Updates</b></dt>
+		 <dd>The Acquire Updates function downloads the UpdateXpress System Pack and individual updates for supported server types from a remote location such as IBM support.</dd>
+		</dl>
+		<dl>
+		 <dt><b>Compare and Update</b></dt>
+		 <ul>
+		 	<li>Inventories the system on which the update is being performed.</li>
+		 	<li>Queries the update directory for a list of applicable update packages.</li>
+		 	<li>Compares the inventory to the applicable update list.</li>
+		 	<li>Recommends a set of updates to apply.</li>
+		 	<li>Deploys the updates to the system</li>
+		 </ul>
+		</dl>
+	</div>
+
+	<h2>Prerequisites for updating firmware</h2>
+	<div>
+		<p>This topic provides information for completing the necessary prerequisites for updating firmware.</p>
+		<div>
+		  <dt><b>Before you begin</b></dt>
+		  	Complete the following prerequisite steps before updating the firmware.
+		  <ol>
+			 	<li>Enable <b>Commands</b> on the USB interface in uEFI by changing the uEFI settings.</li>
+			 	<li>Reboot the host.</li>
+			</ol>
+		 </div>
+	</div>
+
+		<h3>Selecting update preferences</h3>
+		<div>
+	    <p>The Firmware Updates (FW Updates) function can update a remote ESXi host by using either Recommended (UXSP) or Individual updates acquired from the IBM website or a specific location. On the Updates Preferences page, you can select the method for acquiring the updates package.</p>
+	    <h4>Procedure</h4>
+	    <div>
+		    <ol>
+		     <li>
+		      Select <b>Firmware Updates</b> on the Manage IBM Upward Integration page. The Updates Preferences page is displayed.
+		     </li>
+		     <li>
+		      On the Update Preferences page, click to select one of the following update options.
+		      <dl>
+		       <dt><b>Check the IBM web site:</b></dt>
+		       <dd>Download the appropriate updates automatically from IBM site.</dd>
+		      </dl>
+		      <dl>
+		       <dt><b>Look in a directory on vCenter Server:</b></dt>
+		       <dd>A directory on the vCenter server file system containing specific individual updates.</dd>
+		      </dl>
+		      <p>If the vCenter server cannot access the website directly, then you can enter the proxy server and port.</p>
+		      <p>
+		      	When you select the <b>Look in a directory on vCenter server</b> option,
+		the firmware updates acquire updates from a specified directory on
+		vCenter server: <i>Installation folder\IVP\bin\data\uxspi\repository\</i>. However,
+		you are not allowed to change the directory and put updates under
+		this directory .</p>
+		      <p>
+		       When you select the <b>IBM website</b> option to update firmware, the updates
+		package is saved in <i>Installation folder\IVP\bin\data\uxspi\repository\</i> directory
+		on the vCenter server after download. Select the location method to
+		update the other host servers which have the same machine type. Before
+		updating the host firmware, you need input the root account of host
+		for updates.</p>
+		     </li>
+		    </ol>
+		  </div>
+	  </div>
+
+		<h2>Firmware update scenarios</h2>
+		<div>
+			<div>
+		  	<p>The topics in this section describe two scenarios for firmware updates: Recommended Updates (UXSP) and Individual Updates.</p>
+		  	<p>An UpdateXpress System Pack (UXSP) is an integration-tested bundle
+		of online firmware and driver updates for IBM System x? and IBM BladeCenter? servers. UpdateXpress System
+		Packs simplify the downloading and installation of all online driver
+		and firmware updates for a given system, ensuring that you are always
+		working with a complete, current set of updates that have been tested
+		together and bundled by IBM.</p>
+			</div>
+	 		
+		 	<div>
+			 	<h3>Recommended Updates (UXSP)</h3>
+		   	<p>If you selected <b>Check the IBM web site</b> on
+		the Update Preferences page, the Recommended Updates option will download
+		and install firmware and drive updates from the latest UXSP for IBM System x and IBM BladeCenter servers. In
+		the location mode, Recommended Updates will install firmware and drive
+		updates from the latest UXSP of location for IBM System
+		x and IBM BladeCenter servers.</p>
+			  
+			  <h4>Procedure</h4>
+			  <ol>
+			    <li>
+			    	Verify that the vCenter Server has internet access to connect
+			with the IBM website, or make sure the directory of vCenter Server has an UXSP which can apply to
+			the target machine type when you selected location mode in Update
+			Preferences.
+			    </li>
+			    <li>
+			    	Click <b>Start Update Wizard</b> on the
+			Recommended Updates page.he Recommended Updates
+			Wizard opens with the Check Compliance dialog box opened.
+			    </li>
+			    <li>
+			    	Click <b>Check Compliance</b>. If
+			you do not have this type of account for the target host or if the
+			account is wrong, a dialog box opens to prompt for entering the host
+			account information.</li>
+			    <li>
+			     When the Check Compliance action has completed, make any
+			necessary changes and click <b>Next</b>
+			    </li>
+			    <li>
+			    	After all of the updates have been applied, click <b>Close</b> to exit the update wizard.
+			    </li>
+			  </ol>
+			</div>
+
+		  <div>
+		  	<h3>Individual Updates</h3>
+		    <p>If you selected <b>Check the IBM web site</b> on
+		the Update Preferences page, the Individual Updates option will download
+		and install the firmware and drive updates from the IBM website for IBM System x and IBM BladeCenter servers.
+		In the location mode, Individual Updates will install firmware and
+		drive updates from the latest UXSP of location for IBM System
+		x and IBM BladeCenter servers.</p>
+				
+				<h4>About this task</h4>
+				<p>Perform the following steps to update a remote server using the Individual Updates option.</p>
+		    
+		    <h4>Procedure</h4>
+		    <ol>
+		      <li>
+		      Verify that the vCenter Server has internet access to connect
+		with the IBM website, or make
+		sure the directory of vCenter Server has an UXSP which can apply to
+		the target machine type when you selected location mode in Update
+		Preferences.
+		      </li>
+		      <li>
+		      	Click <b>Start Update Wizard</b> on the
+		Individual Updates page, and the Individual Updates Wizard opens.
+		      </li>
+		      <li>
+		      	Click <b>Check Firmware Compliance</b>. If you do not have this type of account for the target host
+		or if the account is wrong, a dialog box opens to prompt for entering
+		the host account information.
+					</li>
+		      <li>
+		      	When the Check Compliance action has completed, make any
+		necessary changes and click <b>Next</b>.
+		      </li>
+		      <li>
+		      	After all of the updates have been applied, click <b>Close</b> to exit the update wizard.
+		      </li>
+		    </ol>
+		  </div>
+		</div>
+
+</body>
+</html>

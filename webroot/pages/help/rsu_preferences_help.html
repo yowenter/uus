@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+	<title>help</title>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/help.css">
+	</head>
+	<body>
+		<h1 class="topictitle1">Configure the Rolling System Update Preferences</h1>
+		
+		<h2>Specify The Update Location</h2>
+		<h3>Procedure</h3>
+		<div>
+			<dl>
+				<dt><b>Check the IBM website</b></dt>
+				<dd>Download the appropriate updates automatically from the IBM website during the rolling update.</dd>
+				<dd>You can configure a proxy if the vCenter server cannot access the website directly, but completing these steps:</dd>
+					<div>
+						<dl>
+							<dd>
+								<ol>
+									<li>Select <b>Check the IBM website</b> and click <b>Require a proxy server for Internet connection</b>.</li>
+									<li>Enter proxy configuration and click <b>Save</b>.</li>
+								</ol>
+							</dd>
+						</dl>
+					</div>
+			</dl>
+			<dl>
+				<dt><b>Look in a directory on vCenter server</b></dt>
+				<dd>On vCenter, locate updates in a local directory : InstallFolder\webroot\bin\data\repository</dd>
+				<dd>The directory cannot be changed for Rolling System Updates.</dd>
+			</dl>
+		</div>
+		
+		<h2>Checking for updates automatically</h2>
+		<div>
+			<p>
+			If you selected the <b>Check the IBM website</b> option, you can have UIM automatically download the latest firmware for all managed servers from the IBM website.
+			</p>
+		</div>
+		<h3>Procedure</h3>
+		<div>
+			<ol>
+				<li>Click <b>Check available updates periodically</b>.</li>
+				<li>Configure check cycle based on how frequently you want to check and download updates.</li>
+				<li>Click <b>Save</b>.</li>
+			</ol>
+		</div>
+		
+		<h2>Checking for updates manually</h2>
+		<div>
+			<p>
+			Complete the following steps to manually check for updates:
+			</p>
+		</div>
+		<h3>Procedure</h3>
+		<div>
+			<ol>
+				<li>Click <b>Check Now</b>.</li>
+				<li>In the _______dialog box, click <b>OK</b> to begin checking for updates. The results are listed on the vCenter event monitor.</li>
+				<li>In the left ane of the vSphere web client, click <b>vCenter node</b> and select <b>monitor</b> and then <b>Events</b>. When the checking operation has finished, the checking updates results display an update event.</li>
+			</ol>
+		</div>
+	</body>
+</html>

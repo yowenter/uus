@@ -1,0 +1,283 @@
+{
+	"returnData":"{
+		"servers":[
+			{
+				"status":200,
+				"returnCode":0,
+				"authenticated":"true",
+				"pwChangeRequired":"false",
+				"ip":"9.125.90.45",
+				"explanation":null,
+				"csrf":"f05d4fb9f5f8396c5c293271b6de9bbb"
+			}
+		]
+	}",
+	"returnCode":0
+}
+{
+	"returnData":"{
+		"servers":[
+			{
+				"status":200,
+				"returnCode":0,
+				"authenticated":"false",
+				"pwChangeRequired":"false",
+				"ip":"9.125.90.45",
+				"explanation":"Theusernameorpasswordyoutypedisnotvalid.",
+				"csrf":null
+			}
+		]
+	}",
+	"returnCode":0
+}
+{
+	'returnData':'{
+		"servers":[
+			{
+				"status":-1,
+				"returnCode":-1,
+				"authenticated":"false",
+				"pwChangeRequired":"false",
+				"ip":"9.125.90.4",
+				"explanation":"[Errno 10061] No connection could be made because the target machine actively refused it",
+				"csrf":null
+			}
+			
+		]
+		
+	}
+	',
+	'returnCode':0
+}
+{
+	'returnData':'NoJSONobjectcouldbedecoded',
+	'returnCode':-1
+}
+{
+	'returnData':'{
+		"servers":[
+			{
+				"ip":"9.125.90.45",
+				"explanation":"Remove the record from db successfully.",
+				"returnCode":0
+			},
+			{
+				"ip":"9.125.90.32",
+				"explanation":"The record dose not exist.",
+				"returnCode":0
+			}
+			
+		]
+		
+	}
+	',
+	'returnCode':0
+}
+{
+	'returnData':'Unexpectederror,
+	seepluginlogC:\\ProgramFiles(x86)\\IBM\\UIMUnifiedService\\webroot\\log\\UIM_Server.logfordetails.',
+	'returnCode':-1
+}
+{
+	"servers":[
+		{
+			"ip":"9.125.90.45",
+			"port":"443",
+			"userid":"USERID",
+			"password":"Passw0rd"
+		},
+		{
+			"ip":"9.125.90.4",
+			"port":"443",
+			"userid":"USERID",
+			"password":"Passw0rd"
+		}
+		
+	]
+}
+{
+	'returnData':'{
+		"servers":[
+			{
+				"status":200,
+				"returnCode":0,
+				"authenticated":"true",
+				"pwChangeRequired":"false",
+				"ip":"9.125.90.45",
+				"explanation":null,
+				"csrf":"7ae2dc4c7fa86be0a5995e08a0d9a6ef",
+				"port":"443"
+			},
+			{
+				"status":-1,
+				"returnCode":-1,
+				"authenticated":"false",
+				"pwChangeRequired":"false",
+				"ip":"9.125.90.4",
+				"explanation":"[Errno 10061] No connection could be made because the target machine actively refused it",
+				"csrf":null,
+				"port":"443"
+			}
+			
+		]
+		
+	}
+	',
+	'returnCode':0
+}
+{
+	'returnData':'{
+		"servers":[
+			{
+				"status":200,
+				"returnCode":0,
+				"authenticated":"true",
+				"pwChangeRequired":"false",
+				"ip":"9.125.90.45",
+				"explanation":null,
+				"csrf":"2d00d1f03fb999b887544f7f4309c5d2",
+				"port":"443"
+			}
+			
+		]
+		
+	}
+	',
+	'returnCode':0
+}
+{
+	'returnData':'{
+		"xHMC":[
+			{
+				"xHMCIp":"9.125.90.45",
+				"chassisList":[
+					{
+						"cmmHealthState":"Critical",
+						"machineType":"8721",
+						"cmmDisplayName":"Chassis",
+						"chassisUUID":"B78E9026EAE2437DAA6A0D43D2BD5747",
+						"domainName":"",
+						"posID":"Critical",
+						"VpdID":"14",
+						"SerialNumber":"23ENY13",
+						"Uri":"chassis/B78E9026EAE2437DAA6A0D43D2BD5747",
+						"productName":"Critical",
+						"productId":"Critical",
+						"powerSupplySlots":6,
+						"AccessState":"Online",
+						"managerUuid":"Critical",
+						"displayName":"Critical",
+						"xHMCIp":"9.125.90.45",
+						"Model":"HC1",
+						"managerName":"UNKNOWN",
+						"Type":"Chassis",
+						"partNumber":"88Y6660",
+						"name":"SN#Y030BG16802L"
+					}
+					
+				]
+				
+			},
+			{
+				"xHMCIp":"9.125.90.87",
+				"chassisList":[
+					{
+						"cmmHealthState":"Critical",
+						"machineType":"8721",
+						"cmmDisplayName":"Chassis",
+						"chassisUUID":"B78E9026EAE2437DAA6A0D43D2BD5747",
+						"domainName":"",
+						"posID":"Critical",
+						"VpdID":"14",
+						"SerialNumber":"23ENY13",
+						"Uri":"chassis/B78E9026EAE2437DAA6A0D43D2BD5747",
+						"productName":"Critical",
+						"productId":"Critical",
+						"powerSupplySlots":6,
+						"AccessState":"Offline",
+						"managerUuid":"Critical",
+						"displayName":"Critical",
+						"xHMCIp":"9.125.90.87",
+						"Model":"HC1",
+						"managerName":"UNKNOWN",
+						"Type":"Chassis",
+						"partNumber":"88Y6660",
+						"name":"SN#Y030BG16802L"
+					}
+					
+				]
+				
+			}
+			
+		]
+		
+	}
+	',
+	'returnCode':0
+}
+{
+	'returnData':'{
+		"xHMC":[
+			{
+				"xHMCIp":"9.125.90.87",
+				"chassisList":[
+					{
+						"cmmHealthState":"Critical",
+						"machineType":"8721",
+						"cmmDisplayName":"Chassis",
+						"chassisUUID":"B78E9026EAE2437DAA6A0D43D2BD5747",
+						"domainName":"",
+						"posID":"336",
+						"Type":"Chassis",
+						"SerialNumber":"23ENY13",
+						"Uri":"chassis/B78E9026EAE2437DAA6A0D43D2BD5747",
+						"productName":"IBM Chassis Midplane",
+						"productId":"336",
+						"AccessState":"Offline",
+						"managerUuid":"UNKNOWN",
+						"displayName":"Chassis",
+						"Model":"HC1",
+						"managerName":"UNKNOWN",
+						"VpdID":"14",
+						"partNumber":"88Y6660",
+						"name":"SN#Y030BG16802L"
+					}
+				]
+			},
+			{
+				"xHMCIp":"9.125.90.21",
+				"chassisList":[
+					
+				]
+			},
+			{
+				"xHMCIp":"9.125.90.45",
+				"chassisList":[
+					{
+						"cmmHealthState":"Critical",
+						"machineType":"8721",
+						"cmmDisplayName":"Chassis",
+						"chassisUUID":"B78E9026EAE2437DAA6A0D43D2BD5747",
+						"domainName":"",
+						"posID":"336",
+						"Type":"Chassis",
+						"SerialNumber":"23ENY13",
+						"Uri":"chassis/B78E9026EAE2437DAA6A0D43D2BD5747",
+						"productName":"IBM Chassis Midplane",
+						"productId":"336",
+						"AccessState":"Online",
+						"managerUuid":"UNKNOWN",
+						"displayName":"Chassis",
+						"Model":"HC1",
+						"managerName":"UNKNOWN",
+						"VpdID":"14",
+						"partNumber":"88Y6660",
+						"name":"SN#Y030BG16802L"
+					}
+				]
+			}
+		]
+	}
+	',
+	'returnCode':0
+}

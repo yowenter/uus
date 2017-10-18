@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+<title>help</title>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/help.css">		
+</head>
+<body>
+<h1 class="topictitle1">Working with Predictive Failures</h1>
+<div>
+<p>
+The Policy and Rules page allows you to set management policies for a server based on a hardware Predictive Failure Alert (PFA). Based on defined policy, IBM Upward Integration for VMware vSphere with vSphere Web Client evacuates VMs from the server to other hosts in the cluster. You can view Predictive Failure Alerts from the server and the triggered policy history on the Predictive Failures page.
+
+201 Before you begin
+202 Before using Predictive Failure Management, verify the following prerequisites are met:
+
+    203 IBM Upward Integration for VMware vSphere cannot receive Predictive Failure Alerts for your hosts until you discover the IMMs and request the IMMs access.
+    204 You can add a Predictive Failure policy for IMMs until you request the IMM access.
+    205 Predictive failure management relies on the hardware PFA capability. The IMM of the server should have the ability to send out Predictive Failure Alerts when a failure is detected.
+    206 Proper configuration of the network management policy on the vCenter server is required to enable TCP on the https port that you selected for IBM Upward Integration for VMware VSphere with vSphere Client use. The default port is 9500 when you install IVP. IBM Upward Integration for VMware VSphere with vSphere Client listens on this port for incoming indications.
+    207 If you want to evacuate VMs from a host when a set policy is launched, the host must be put in a properly configured DRS (Dynamic Resource Scheduler) cluster. IBM Upward Integration puts the host in maintenance mode, and the VMWare DRS cluster should ensure VM migration to another host.
+
+
+<h2 class="topictitle1">Setting Policy and Rules</h2>
+Policy and Rules allows you to set, edit, and delete a policy which defines the event categories and corresponding actions being executed on the target server. The Policy and Rules table is designed for better batch operation.
+<br />
+Conditions include variant hardware PFA indications that IBM VMWare plugin receive from IMM. you can select them to form your rule.
+<br />
+An action occurs when the conditions has been triggered on the managed endpoint, and which actions will be managed by the server. You can define the 'migration' and 'notify' actions. 
+<ul>
+<li>The migration action automatically launches the pre-defined migration policy on the VCenter Server (See the VCenter Server User's Guide for more information)</li>
+<li>The notify action displays a message log</li>
+</ul>
+<h2 class="topictitle1">Viewing Predictive Failure Events</h2>
+The indication provider monitors Predictive Failure Alerts(PFAs) from IMM and send to IBM VMWare plugin. All of indication alters will be shown on the Event log table.
+<h2 class="topictitle1">Viewing Action History</h2>
+When the conditions of a rule are met, the defined action of the rule is launched on the managed endpoint. You can see all triggered rules and action results in the Action History table.
+<br/><br/><b>Note:</b> A Notify action record has no status information, this record just indicts this action was successfully triggered.
+ 
+</p>
+</div>
+</body>
+</html>

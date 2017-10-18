@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+<title>help</title>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/help.css">		
+</head>
+<body>
+<h1 class="topictitle1">Trouble shooting</h1>
+<div>
+<p>
+Latest Poll Status represents the status of the latest poll.<br><br>
+If "N/A" displays, then check and ensure:
+<ol>
+<li>Power monitoring is enabled for this host. User need to wait for a few minites after power monitoring is enabled and click refresh link below to view latest power information.
+</li>
+<li>Windows service "IBM vSphere Plugin Power Monitor" is started.
+</li>
+</ol>	
+If "Failed" displays, then check and ensure:
+<ol>
+<li>The host is alive.
+</li>
+<li>Network connection between vCenter and the host is OK.
+</li>
+<li>CIMOM on the host is running.
+</li>
+<li>Credentials for the host is not changed since you enable the power monitoring of the host. If you changed the credentials for the host, please disable and enable the power 
+	monitoring again to input new credentials for polling.
+</li>
+</ol>	
+</p>
+</div>
+</body>
+</html>

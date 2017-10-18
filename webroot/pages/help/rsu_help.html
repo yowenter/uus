@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+	<title>help</title>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/help.css">
+	</head>
+	<body>
+		<h1 class="topictitle1">Managing the Rolling System Update tasks</h1>
+		<p>
+			Rolling System Update (RSU) provides a task manager that helps you manage rolling update tasks. A task contains all of the information and options for a rolling update.
+		</p>
+		<p>
+			The Task Manager has the following task options:
+			<ul>
+				<li>Create a task</li>
+				<li>Edit a task that has not been started</li>
+				<li>Delete a task</li>
+				<li>Cancel a running task</li>
+				<li>Rerun a failed task</li>
+				<li>Clone a completed task</li>
+				<li>View reports of tasks</li>
+			</ul>
+		</p>
+		
+		<h2>Creating a task</h2>
+		<div>
+			<dd>Each cluster can have only one active task.</dd>
+		</div>
+		<h3>Procedure</h3>
+		<div>
+			<ol>
+				<li>Click <b>Create</b> to open the Rolling System Update Wizard. The <b>Create</b> button is enabled only when a task displays as Finished, Canceled, or as a Failed task in the list. All the hosts in current cluster display on the left and are organized by machine type. Available and installed firmware versions for each machine type and host are listed on the right.</li>
+				<li>
+					Select a host to view available firmware from the right and choose the updates you want to apply. 
+					<p>
+						If a machine type is selected, the selection of firmware is applied to all the hosts that have this machine type. If a host checkbox is greyed out, there are no available updates in the repository.
+					</p>
+					<p>
+						If inventory information has not been collected for a host, RSU displays firmware of its machine type for this host. In this case, you can still select firmware for this host to update. RSU will try to collect host inventory information when updating and install the selected firmware. If a selected firmware is not available for the host, it is skipped.
+					</p>
+				</li>
+				<li>Click <b>Next</b>. The available options display.</li>
+				<li>Click <b>Finish</b> to save the task. RSU initiates the task according to the schedule.</li>
+			</ol>
+		</div>
+		
+		<h2>Editing a not-started task</h2>
+		<div>
+			<dd>You can edit a task from the Task Manager. Only editing a not-started task is supported.</dd>
+		</div>
+		<h3>Procedure</h3>
+		<div>
+			<ol>
+				<li>Select a not-started task in the list and click <b>Edit</b>. The Rolling System Update Wizard opens. The machine type and hosts are listed on the left and the available firmware is listed is up-to-date.</li>
+				<li>Edit the task and then click <b>Finish</b> to save changes.</li>
+			</ol>
+		</div>
+		
+		<h2>Deleting a task</h2>
+		<div>
+			<dd>All tasks except a running task can be deleted.</dd>
+		</div>
+		<h3>Procedure</h3>
+		<div>
+			<ol>
+				<li>Select one or more tasks in the list that are not currently running.</li>
+				<li>Click <b>Delete</b>.</li>
+			</ol>
+		</div>
+		
+		<h2>Canceling a running task</h2>
+		<div>
+			<dd>A Rolling System Update (RSU) task can be canceled while it is running. If a task is canceled, the task status changes to Canceling.</dd>
+		</div>
+		<h3>Procedure</h3>
+		<div>
+			<ol>
+				<li>Select a running task in the list.</li>
+				<li>Click <b>Cancel</b>. RSU first completes the updating of a host that is started and then only cancels the others. This task would may take several minutes to complete.</li>
+			</ol>
+		</div>
+		
+		<h2>Rerunning a failed task</h2>
+		<div>
+			<dd>You can rerun a task, if it has failed or has been canceled. The <b>Rerun</b> button is only available in these two situations.</dd>
+		</div>
+		<h3>Procedure</h3>
+		<div>
+			<dd>Click <b>Rerun</b> in the status column.</dd>
+		</div>
+
+		<h2>Cloning a completed task</h2>
+		<div>
+			<dd>You can clone a finished, failed, or canceled Rolling System Update task as a new task.</dd>
+		</div>
+		<h3>Procedure</h3>
+		<div>
+			<ol>
+				<li>Select a finished, failed or canceled task from the list.</li>
+				<li>Click <b>Create Like...</b> to open the Rolling System Update Wizard.</li>
+				<li>Edit the original selection and click <b>Finish</b> to save the new task.</li>
+			</ol>
+		</div>
+		
+		<h2>Viewing reports of tasks</h2>
+		<div>
+			<dd>The report of tasks provides Rolling System Update detail information.</dd>
+		</div>
+		<h3>Procedure</h3>
+		<div>
+			<dd>In the Status column, click a status link to open Rolling Update Task Report view. The table below lists the status for tasks, hosts, and firmware.</dd>
+		</div>
+	</body>
+</html>

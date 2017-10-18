@@ -1,0 +1,234 @@
+{
+    "mapping": [
+        {
+            "machineType": "*",
+            "bitDefinition": [
+                {
+                    "bit":       0,
+                    "type":      "VMEFlag",
+                    "desc":      "RAS event VM movement support",
+                    "id":        ""
+                },
+                {
+                    "bit":       1,
+                    "type":      "EventCategory",
+                    "desc":      "Processor subsystem",
+                    "id":        "Processor"
+                },
+                {
+                    "bit":       2,
+                    "type":      "EventCategory",
+                    "desc":      "Memory subsystem",
+                    "id":        "Memory"
+                },
+                {
+                    "bit":       3,
+                    "type":      "EventCategory",
+                    "desc":      "I/O subsystem",
+                    "id":        "IO"
+                },
+                {
+                    "bit":       4,
+                    "type":      "EventCategory",
+                    "desc":      "Power",
+                    "id":        "Power"
+                },
+                {
+                    "bit":       5,
+                    "type":      "EventCategory",
+                    "desc":      "Cooling",
+                    "id":        "Cooling"
+                },
+                {
+                    "bit":       7,
+                    "type":      "EventCategory",
+                    "desc":      "Storage",
+                    "id":        "Storage"
+                },
+                {
+                    "bit":       26,
+                    "type":      "Severity",
+                    "desc":      "Redundancy degrade",
+                    "id":        "RedundancyDegrade"
+                },
+                {
+                    "bit":       27,
+                    "type":      "Severity",
+                    "desc":      "Predicted failures",
+                    "id":        "PFA"
+                },
+                {
+                    "bit":       28,
+                    "type":      "Severity",
+                    "desc":      "Redundancy loss",
+                    "id":        "Redundancy"
+                },
+                {
+                    "bit":       29,
+                    "type":      "Severity",
+                    "desc":      "Info",
+                    "id":        "Info"
+                },
+                {
+                    "bit":       30,
+                    "type":      "Severity",
+                    "desc":      "Warning",
+                    "id":        "Warning"
+                },
+                {
+                    "bit":       31,
+                    "type":      "Severity",
+                    "desc":      "Partial capacity loss",
+                    "id":        "Capacity"
+                }
+
+            ],
+            "events": [
+                {
+                    "eventId":   "806F0007xxxxxxxx",
+                    "messageId": "PLAT0042",
+                    "category":  "Processor",
+                    "severity":  "Capacity"
+                },
+                {
+                    "eventId":   "806F0107xxxxxxxx",
+                    "messageId": "PLAT0036",
+                    "category":  "Processor",
+                    "severity":  "Capacity"
+                },
+                {
+                    "eventId":   "806F0607xxxxxxxx",
+                    "messageId": "PLAT0816",
+                    "category":  "Processor",
+                    "severity":  "Capacity"
+                },
+                {
+                    "eventId":   "806F0a07xxxxxxxx",
+                    "messageId": "PLAT0038",
+                    "category":  "Processor",
+                    "severity":  "PFA"
+                },
+                {
+                    "eventId":   "806F0807xxxxxxxx",
+                    "messageId": "PLAT0061",
+                    "category":  "Processor",
+                    "severity":  "Info"
+                },
+                {
+                    "eventId":   "806F010cxxxxxxxx",
+                    "messageId": "PLAT0138",
+                    "category":  "Memory",
+                    "severity":  "Capacity"
+                },
+                {
+                    "eventId":   "806F0a0cxxxxxxxx",
+                    "messageId": "PLAT0146",
+                    "category":  "Memory",
+                    "severity":  "Capacity"
+                },
+                {
+                    "eventId":   "806F090cxxxxxxxx",
+                    "messageId": "PLAT0142",
+                    "category":  "Memory",
+                    "severity":  "PFA"
+                },
+                {
+                    "eventId":   "806F050cxxxxxxxx",
+                    "messageId": "PLAT0144",
+                    "category":  "Memory",
+                    "severity":  "PFA"
+                },
+                {
+                    "eventId":   "800b020Cxxxxxxxx",
+                    "messageId": "PLAT0804",
+                    "category":  "Memory",
+                    "severity":  "RedundancyDegrade"
+                },
+                {
+                    "eventId":   "800b030Cxxxxxxxx",
+                    "messageId": "PLAT0806",
+                    "category":  "Memory",
+                    "severity":  "Redundancy"
+                },
+                {
+                    "eventId":   "800b010Cxxxxxxxx",
+                    "messageId": "PLAT0802",
+                    "category":  "Memory",
+                    "severity":  "Redundancy"
+                },
+                {
+                    "eventId":   "800b0103xxxxxxxx",
+                    "messageId": "PLAT0802",
+                    "category":  "Power",
+                    "severity":  "Redundancy"
+                },
+                {
+                    "eventId":   "800b0108xxxxxxxx",
+                    "messageId": "PLAT0802",
+                    "category":  "Power",
+                    "severity":  "Redundancy"
+                },
+                {
+                    "eventId":   "800b0109xxxxxxxx",
+                    "messageId": "PLAT0802",
+                    "category":  "Power",
+                    "severity":  "Redundancy"
+                },
+                {
+                    "eventId":   "806F0208xxxxxxxx",
+                    "messageId": "PLAT0088",
+                    "category":  "Power",
+                    "severity":  "PFA"
+                },
+                {
+                    "eventId":   "806F0709xxxxxxxx",
+                    "messageId": "PLAT0118",
+                    "category":  "Power",
+                    "severity":  "PFA"
+                },
+                {
+                    "eventId":   "806F0413xxxxxxxx",
+                    "messageId": "PLAT0232",
+                    "category":  "IO",
+                    "severity":  "Capacity"
+                },
+                {
+                    "eventId":   "806F0513xxxxxxxx",
+                    "messageId": "PLAT0234",
+                    "category":  "IO",
+                    "severity":  "Capacity"
+                },
+                {
+                    "eventId":   "806F0813xxxxxxxx",
+                    "messageId": "PLAT0240",
+                    "category":  "IO",
+                    "severity":  "Capacity"
+                },
+                {
+                    "eventId":   "806F020dxxxxxxxx",
+                    "messageId": "PLAT0168",
+                    "category":  "Storage",
+                    "severity":  "PFA"
+                },
+                {
+                    "eventId":   "800901ssxxxxxxxx",
+                    "messageId": "PLAT0538",
+                    "category":  "Storage",
+                    "severity":  "Info"
+                },
+                {
+                    "eventId":   "806F0a0cxxxxxxxx",
+                    "messageId": "PLAT0146",
+                    "category":  "Cooling",
+                    "severity":  "Capacity"
+                },
+                {
+                    "eventId":   "800b010Axxxxxxxx",
+                    "messageId": "PLAT0802",
+                    "category":  "Cooling",
+                    "severity":  "Redundancy"
+                }
+            ]
+        }
+    ]
+}

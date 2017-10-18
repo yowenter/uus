@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+<title>help</title>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/help.css">		
+</head>
+<body>
+<h1 class="topictitle1">Working with Power and Cooling</h1>
+<p>The topics in this section describe Power Metric options and provide you with the
+ability to manage power usage using power capping and power throttling. </p>
+
+<div>
+	
+	<h2>Power Metric page</h2>
+  <p>
+  	The Power Metric page has options for viewing the Power Usage
+History, Thermal History, and Fan Summary. If the host is being monitored,
+the current power usage, thermal history, fan history, and the time
+of the monitor reading are displayed. This information is automatically
+refreshed every five minutes. This information is helpful for determining
+whether to reassign the workload.</p>	
+
+	<h3>Enabling and disabling power monitoring</h3>
+	<p>This topic provides a description of how to enable and disable power monitoring.</p>
+	<div>
+		<p>This topic provides a description of how to enable and disable power monitoring.</p>
+    <h4>Procedure</h4>
+    <ol>
+    	<li>Select the <b>Power and Cooling</b> tab</li>
+      <li>Click <b>Enable</b> to enable Power Monitor on a host. The Enable button is visible when Power Metric is not enabled on a host.</li>
+      <li>In the credentials dialog box, enter the credentials for
+the host and click <b>OK</b>. The host credentials will be saved in a database and the monitoring of
+power usage begins.</li>
+      <li>Click <b>Disable</b> to disable the monitoring.
+        <p>Enable <b>Commands</b> on the USB Interface in uEFI by changing the uEFI settings before OS booting.</p>
+      </li>
+    </ol>
+  </div>
+  
+  <h3>Setting Power Capping</h3>
+  <p>Power capping allows
+you to allocate less power and cooling to a system  if the firmware
+supports capping and it is enabled. This feature can help lower datacenter
+infrastructure costs and potentially allow more servers to be put
+into an existing infrastructure. Setting a power capping value ensures
+that system power consumption stays at or below the value defined
+by the setting. The power cap value is the value you set for a rack
+or blade server that will be capped by the firmware. The power cap
+value is persistent across power cycles for both rack and blade servers.</p>
+
+	<h3>Setting Power Throttling</h3>
+  <p>Setting power throttling allows you to receive alerts when
+power consumption exceeds a value you have set. You can set two power
+throttling values individually, one for a warning and one for a critical
+alert. When the power consumption exceeds a defined power throttling
+value, IVP receives a throttling event, which is then displayed in
+the Power Throttling Indications table.</p>
+	<p>Enable Power Throttling before setting Power Throttling.</p>
+
+
+	<h2>Viewing Power Usage History, Thermal Usage History, and Fan Usage History</h2>
+  <p>The Power History, Thermal History, and Fan History charts are displayed on the right
+pane of the page. You can customize the duration and intervals for
+each of these charts.</p>
+  <div>
+  	<h3>Procedure</h3>
+  	<ol>
+  		<li>Select the <i>Power and Cooling</i> tab. For each of the history charts, you can:
+  			<ul>
+	  			<li>Use mouse wheel to zoom in/out of the charts, and use drag and drop to move a chart.</li>
+	        <li>Click <b>Set Duration</b> to change the collection of history data to a different time interval.</li>
+        </ul>
+       </li>
+       <li>
+       	Select one of the following options from the left pane.
+       	<dl>
+       		<dt><b>General</b></dt>
+         	<dd>On this page, you can set the value of each power metric attribute after enabling power monitoring on a host.</dd>
+        </dl>
+        <p></p>
+        <dl>
+        	<dt><b>Power History</b></dt>
+         	<dd>The Power Usage History chart provides power consumption readings for a 24-hour period.</dd>
+        </dl>
+        <dl>
+         <dt><b>Thermal History</b></dt>
+         <dd>The Thermal Usage History chart provides temperature readings for a 24-hour period.</dd>
+        </dl>
+        <dl>
+         <dt><b>Fan History</b></dt>
+         <dd>The Fan Usage History chart provides fan usage readings for a 24-hour period.</dd>
+        </dl>
+       </li>
+      </ol>
+  </div>
+     
+</div>
+
+</body>
+</html>

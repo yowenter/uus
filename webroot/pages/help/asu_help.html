@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-us" xml:lang="en-us">
+	<title>help</title>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/help.css">		
+	</head>
+	
+	<body>
+		<h1 class="topictitle1">Working with Configuration</h1>
+		<p>
+			The configuration page manages the system settings on the host. This includes settings for IMM, uEFI, and the boot order of the host.
+			<h2 class="topictitle1">Viewing advanced system settings</h2>
+			Settings are categorized into sections which are displayed in different links in the left pane. You can easily find a setting by viewing the different links. 
+			The values of the settings are displayed in each link and based on the last refresh. The last update date and time is displayed to the right of Refresh button. 
+			</br>
+			</br>
+			1. Click a link(e.g. IMM Port Assignments) in the left pane.
+			</br>
+			</br>
+			2. Click <b>Refresh</b> to get latest advanced system settings values for this section.
+			</br>
+			</br>
+			Some settings, such as uEFI settings, are only supported on a certain machine type or firmware version. If your host does not support a setting, it would be disabled to indicate this setting is currently not supported on your host. 
+			</br>
+			</br>
+			3. To view boot order, click <b>Boot Order</b> in the left pane.
+			<h2 class="topictitle1">Changing system settings</h2>
+			1. To change an advanced system setting, enter the new value and click <b>Save</b>. The change is executed on the endpoint. 
+			</br>
+			<ul>
+				<li>If the change is successfully executed, the symbol <img src="../../images/statusSuccess_obj16.gif" height="15px"/> is displayed. </li>
+				<li>If the change is not successfully executed, the symbol <img src="../../images/statusCritical_obj16.gif" height="15px"/> is displayed. </li>
+			</ul>
+			To view detailed information about why the setting change failed, place the cursor over the symbol.
+			</br>
+			</br>
+			2. Click <b>Save</b> to save any settings changes. The setting change result for each setting is displayed as a single setting result. Changed settings display asterisk. on the right.
+	 
+			</br>
+			</br>
+			The following list provides an example for some of the different types of settings and how to change these settings. The manner in which each setting is changed varies.
+			<ul>
+				<li>text string: Before you enter any information, a prompt showing the requirements is displayed. If the information you entered does not match the requirements, place the cursor over the text string to view the description. </li>
+				<li>selection type: select the value from the drop-down menu. </li> 
+				<li>boot order: The right column shows the current boot order, and the left column shows the optional device. To change the order, you can move a boot order option up or down and between the two columns, by clicking the corresponding buttons. </li>
+			</ul>
+		</p>
+	</body>
+</html>

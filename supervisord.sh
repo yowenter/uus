@@ -24,5 +24,5 @@ echo "Init configuration."
 /etc/init.d/lxiserver start 
 python /opt/lenovo/UnifiedService/render_conf.py
 echo "Sync db"
-python /opt/lenovo/UnifiedService/webroot/bin/keepDBupdate.pyc
+#python /opt/lenovo/UnifiedService/webroot/bin/keepDBupdate.pyc
 exec supervisord

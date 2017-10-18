@@ -20,5 +20,8 @@ stderr_logfile_maxbytes=0
 stdout_logfile=/dev/stdout
 stdout_logfile_maxbytes=0
 EOT
-
+echo "Init configuration."
+python /opt/lenovo/UnifiedService/render_conf.py
+echo "Sync db"
+python /opt/lenovo/UnifiedService/webroot/bin/keepDBupdate.pyc
 exec supervisord

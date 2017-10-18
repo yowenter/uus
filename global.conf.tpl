@@ -50,10 +50,10 @@ DBCHOICE		= mysql
 
 # For mysql
 DBNAME			= uim_service
-USERNAME		= root
-PASSWORD		= root
-DBPORT          = 3306
-MYSQL_VIP_URL = mysql+mysqldb://root:root@root/uim_service?charset=utf8
+USERNAME		= {MYSQL_USER}
+PASSWORD		= {MYSQL_PASS}
+DBPORT          = {MYSQL_PORT}
+MYSQL_VIP_URL = mysql+mysqldb://{MYSQL_USER}:{MYSQL_PASS}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DB}?charset=utf8
                                                
 # For Postgresql
 #DBNAME			= uim_service

@@ -3,8 +3,8 @@
 cat <<EOT > /etc/supervisord.conf
 [supervisord]
 nodaemon=true
-[program:nginx]
-command=nginx -g "daemon off;"
+[program:lighttpd]
+command= lighttpd -D -f /etc/lighttpd/lighttpd.conf
 autorestart=true
 startsecs=0
 stderr_logfile=/dev/stderr

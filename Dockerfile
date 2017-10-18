@@ -17,18 +17,18 @@ RUN pip install -i http://pypi.douban.com/simple/  --trusted-host pypi.douban.co
 
 
 RUN apt-get install -y software-properties-common
-RUN add-apt-repository -y ppa:nginx/stable
-RUN apt-get update
-RUN apt-get install -y nginx
+#RUN add-apt-repository -y ppa:nginx/stable
+#RUN apt-get update
+#RUN apt-get install -y nginx
+RUN apt-get install -y lighttpd
 
-
-
+COPY  lighttpd.conf  /etc/lighttpd/lighttpd.conf
 
 
 
 COPY supervisord.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/supervisord.sh
-COPY nginx /etc/nginx/
+#COPY nginx /etc/nginx/
 
 RUN mkdir -p /opt/lenovo/UnifiedService
 WORKDIR /opt/lenovo/UnifiedService
